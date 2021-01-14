@@ -5,32 +5,26 @@ _Author: Hieu Khuong_
 
 -------
 ### Table of Contents
-[Web Scraping Notebook](TikiScraper.ipynb)  
-[Data Cleaning Notebook](TikiDataCleaning.ipynb)  
+[Data Scraping](TikiScraper.ipynb)  
+[Data Cleaning](TikiDataCleaning.ipynb)  
 [Feature Engineering & Recommender Model](TikiRecommender.ipynb)
 
 ## Executive Summary
 
-**Problem Statement**
-
-The world of retail is changing at a rapid pace.  Many brick and mortar locations are closing and being replaced by online stores.  However, while the breadth of assortment that comes with shopping online is something that drives customers to a website, a lot of eCommerce platforms fail to sell through a high percent of their merchandise.  This is often due to a poor user browsing experience. Customers can spend hours scrolling through hundreds, sometimes thousands of items of merchandise never finding an item they want to buy.  
-
 #### Project Goal
 This goal of this project is to create both content-based and collaborative user- and item-based recommender systems, that will help solve this problem. Customers should be provided suggestions based on their likes and needs in order to create a better shopping environment that boosts sales and increases their time spent on a website. 
 
-#### Data Source
+#### [Data Scraping](TikiScraper.ipynb)  
 
-Since TIKI does not granted permission to its OpenAPI (except for sellers and co-operator), I have to scrape all the most relevant data on the web page [tiki.vn](https://tiki.vn). Details can be found in [this notebook](TikiScraper.ipynb)  
+Since TIKI does not granted permission to its OpenAPI (except for sellers and co-operator), I have to scrape all the most relevant data on the web page [tiki.vn](https://tiki.vn).
 
-#### Data Cleaning
-[Data Cleaning Notebook](TikiDataCleaning.ipynb)  
+#### [Data Cleaning](TikiDataCleaning.ipynb)  
 The data consists of many unrelevant information and NaNs. Therefore, I have drop multiple columns and only keep useful features.
 For the products' info dataset, I have extracted the whole description using BeautifulSoup and then tokenizing it with PyVi for Vietnamese language.
 For the products' review dataset, I have extracted the user's info using BeautifulSoup, including their full names, purchase time, comment time, etc.
 All timestamp provided are converted into Datetime format for further investigation.
 
-#### Modeling
-[Feature Engineering & Recommender Model](TikiRecommender.ipynb)
+#### [Feature Engineering & Recommender Model](TikiRecommender.ipynb)
 2 different methods (Content-based Filtering and Collaborative Filtering) were tested, and the results are much more promising using the latter one.
 I have tested multiple similarity metrics:
 - Weighted Pearson Correlation Coefficient(WPCC)
