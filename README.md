@@ -12,7 +12,8 @@ _Author: Hieu Khuong_
 ## Executive Summary
 
 #### Project Goal
-This goal of this project is to create both content-based and collaborative user- and item-based recommender systems, that will help solve this problem. Customers should be provided suggestions based on their likes and needs in order to create a better shopping environment that boosts sales and increases their time spent on a website. 
+Recommender systems are widely used in product recommendations such as recommendations of music, movies, books, news, research articles, restaurants, etc.
+The goal of this project is to create both content-based and collaborative-filtering-based recommender systems to help solve this problem. Customers should be provided suggestions based on their likes and needs in order to create a better shopping environment that boosts sales and increases their time spent on a website. 
 
 #### [Data Scraping](TikiScraper.ipynb)  
 
