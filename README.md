@@ -13,11 +13,11 @@ _Author: Hieu Khuong_
 
 #### Project Goal
 Recommender systems are widely used in product recommendations such as recommendations of music, movies, books, news, research articles, restaurants, etc.
-The goal of this project is to create both content-based and collaborative-filtering-based recommender systems to help solve this problem. Customers should be provided suggestions based on their likes and needs in order to create a better shopping environment that boosts sales and increases their time spent on a website. 
+The goal of this project is to create both content-based and collaborative filtering recommender systems to help solve this problem. Customers should be provided suggestions based on their likes and needs in order to create a better shopping environment that boosts sales and increases their time spent on a website. 
 
 #### [Data Scraping](TikiScraper.ipynb)  
 
-Since TIKI does not granted permission to its OpenAPI (except for sellers and co-operator), I have to scrape all the most relevant data on the web page [tiki.vn](https://tiki.vn).
+Since TIKI does not grant permission to access its OpenAPI for non-sellers, I have to scrape all the most relevant data from the web page [tiki.vn](https://tiki.vn).
 
 #### [Data Cleaning](TikiDataCleaning.ipynb)  
 The data consists of many unrelevant information and NaNs. Therefore, I have drop multiple columns and only keep useful features.
